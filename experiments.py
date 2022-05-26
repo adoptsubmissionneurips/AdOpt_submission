@@ -776,7 +776,7 @@ if __name__ == "__main__":
 
     '''Create regret multiplot'''
     if len(args.algo_names)>1:
-        for dataset in DATASETS:
+        for dataset in args.datasets:
             experiments=args.algo_names
             path=os.getcwd()
             results_dir=os.path.join(path,BASE_DIR,dataset)
